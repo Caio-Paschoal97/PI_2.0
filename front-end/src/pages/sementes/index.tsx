@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 interface Semente {
   id: number
-  nomePopular: string
+  nomeComum: string
   nomeCientifico: string
   fabricante: string
   dataValidade: string // vem como yyyy-MM-dd
@@ -89,7 +89,7 @@ export default function ListaSementes() {
             {sementes.map(semente => (
               <tr key={semente.id}>
                 <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.id}</td>
-                <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.nomePopular}</td>
+                <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.nomeComum}</td>
                 <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.nomeCientifico}</td>
                 <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.fabricante}</td>
                 <td style={{ border: '1px solid #ccc', padding: '8px' }}>{semente.dataValidade}</td>
